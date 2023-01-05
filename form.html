@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Now we see from</h1>
+    <form action="">
+        <label for="name">
+            <input id="name" placeholder="your name" type="text">
+        </label>
+        
+        <label for="email">
+            <input id="email" placeholder="your email" type="email">
+        </label>
+        <fieldset>
+            <legend>pick one item</legend>
+            <label for="chitoy">
+                <input type="radio" name="pitha" id="chitoy">
+                Chitoy
+            </label>
+            <label for="vapa">
+                <input type="radio" name="pitha" id="vapa">
+                Vapa
+            </label>
+            <label for="puri">
+                <input type="radio" name="pitha" id="puri">
+                Puri
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>select one or more vorta</legend>
+            <label for="sorisha">
+                <input type="checkbox" name="vorta" id="sorisha">
+                Shorisha
+            </label>
+            <label for="shukti">
+                <input type="checkbox" name="vorta" id="shukti">
+                Shukti
+            </label>
+            <label for="dhonia">
+                <input type="checkbox" name="vorta" id="dhonia">
+                Dhonia
+            </label>
+            
+        </fieldset>
+        <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
